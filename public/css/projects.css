@@ -1,0 +1,427 @@
+/* ==========================================================
+   UBAID ALI — PORTFOLIO
+   projects.css  (add-on styles for projects page + about photo)
+   ========================================================== */
+
+/* ─── ABOUT: PHOTO BLOCK ─────────────────────────────────── */
+.about-photo-wrap {
+  margin-bottom: 2rem;
+}
+
+.about-photo-frame {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid var(--gold);
+  box-shadow: 0 0 0 6px rgba(200, 164, 106, 0.12);
+  overflow: hidden;
+  position: relative;
+  background: var(--navy);
+}
+
+.about-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-photo-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  background: var(--navy);
+}
+
+.about-photo-placeholder svg {
+  width: 36px;
+  height: 36px;
+  stroke: var(--gold);
+  opacity: 0.6;
+}
+
+.about-photo-placeholder span {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.about-photo-placeholder small {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.25);
+  line-height: 1.5;
+}
+
+/* ─── INDEX: PROJECTS CTA BUTTON ROW ─────────────────────── */
+.projects-cta {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* ─── PROJECTS PAGE: BODY ────────────────────────────────── */
+.projects-page {
+  background: var(--cream);
+}
+
+/* ─── PROJECTS PAGE: HEADER ──────────────────────────────── */
+.projects-header {
+  min-height: 320px;
+  background: var(--navy);
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 6% 64px;
+}
+
+.projects-header-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--navy) 55%, var(--navy-light) 100%);
+  opacity: 0.8;
+}
+
+.projects-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 6%;
+  width: 220px; height: 2px;
+  background: linear-gradient(to right, var(--gold), transparent);
+}
+
+.projects-header-content {
+  position: relative;
+  z-index: 2;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 2rem;
+  transition: color 0.2s ease;
+}
+
+.back-link svg {
+  width: 15px; height: 15px;
+  stroke: currentColor;
+  fill: none;
+}
+
+.back-link:hover { color: var(--gold); }
+
+.projects-page-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(40px, 6vw, 72px);
+  font-weight: 600;
+  color: var(--white);
+  line-height: 1.05;
+  margin-bottom: 1rem;
+}
+
+.projects-page-subtitle {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.45);
+  max-width: 520px;
+  line-height: 1.8;
+}
+
+/* ─── PROJECTS MAIN ──────────────────────────────────────── */
+.projects-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 6% 100px;
+}
+
+/* ─── PROJECT DETAIL ARTICLE ─────────────────────────────── */
+.proj-detail {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 64px;
+  padding: 60px 0;
+}
+
+.proj-divider {
+  height: 1px;
+  background: var(--gray-300);
+  max-width: 1100px;
+  margin: 0 auto;
+  width: calc(100% - 12%);
+}
+
+/* meta column */
+.proj-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 8px;
+}
+
+.proj-meta-number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 64px;
+  font-weight: 600;
+  color: var(--gray-300);
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.proj-meta-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.proj-meta-tags span {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  background: var(--navy);
+  color: var(--gold);
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+/* body column */
+.proj-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(26px, 3.5vw, 40px);
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.proj-summary {
+  font-size: 15.5px;
+  color: var(--text-secondary);
+  line-height: 1.9;
+  margin-bottom: 2rem;
+  max-width: 720px;
+}
+
+/* ─── VIDEO SLOT ─────────────────────────────────────────── */
+.proj-video-wrap {
+  margin-bottom: 2rem;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--navy);
+  border: 1px solid rgba(200, 164, 106, 0.15);
+}
+
+.proj-video-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 32px;
+  text-align: center;
+  background: var(--navy-mid);
+  cursor: default;
+  transition: background 0.2s ease;
+}
+
+.proj-video-placeholder:hover {
+  background: var(--navy-light);
+}
+
+.proj-video-placeholder svg {
+  width: 48px; height: 48px;
+  stroke: var(--gold);
+  fill: none;
+  opacity: 0.7;
+}
+
+.proj-video-placeholder p {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.04em;
+}
+
+.proj-video-placeholder small {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.22);
+  line-height: 1.6;
+  max-width: 480px;
+}
+
+/* Actual video / iframe once added */
+.proj-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  border: none;
+}
+
+/* ─── DETAILS GRID ───────────────────────────────────────── */
+.proj-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 2rem;
+}
+
+.proj-detail-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.proj-detail-block p {
+  font-size: 14.5px;
+  color: var(--text-muted);
+  line-height: 1.85;
+}
+
+.proj-detail-block code {
+  font-size: 13px;
+  background: rgba(11, 25, 41, 0.08);
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  color: var(--navy);
+}
+
+/* ─── PROJECT LINKS ──────────────────────────────────────── */
+.proj-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.proj-btn-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 24px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: var(--navy);
+  color: var(--gold);
+  border-radius: 3px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.proj-btn-github:hover {
+  background: var(--navy-light);
+  transform: translateY(-2px);
+}
+
+.proj-btn-github svg {
+  width: 15px; height: 15px;
+  stroke: currentColor;
+  fill: none;
+}
+
+.proj-btn-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 24px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--navy);
+  border: 1px solid var(--gray-300);
+  border-radius: 3px;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.proj-btn-live:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.proj-btn-live svg {
+  width: 14px; height: 14px;
+  stroke: currentColor;
+  fill: none;
+}
+
+/* ─── FOOTER ─────────────────────────────────────────────── */
+.projects-footer {
+  background: var(--navy);
+  padding: 48px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.projects-footer .footer-copy {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.18);
+  letter-spacing: 0.08em;
+}
+
+/* ─── RESPONSIVE ─────────────────────────────────────────── */
+@media (max-width: 760px) {
+  .proj-detail {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 48px 0;
+  }
+
+  .proj-meta {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding-top: 0;
+  }
+
+  .proj-meta-number {
+    font-size: 44px;
+    margin-bottom: 0;
+  }
+
+  .proj-meta-tags {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .proj-details-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .projects-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-photo-frame {
+    width: 150px;
+    height: 150px;
+  }
+}

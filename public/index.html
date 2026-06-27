@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ubaid Ali — Computer Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ─── NAVBAR ─────────────────────────────────── -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">UA.</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ─── HERO ──────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-geo"></div>
+    <div class="hero-circle"></div>
+    <div class="hero-accent-line"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Portfolio</p>
+      <h1 class="hero-name">Ubaid<br>Ali</h1>
+      <p class="hero-title">Computer Engineering Student &mdash; <strong>UET Lahore</strong></p>
+      <p class="hero-desc">
+        Passionate about building reliable software systems and web experiences.
+        Web updater at UET Science Society. Skilled across the full stack —
+        from assembly to JavaScript.
+      </p>
+      <div class="hero-ctas">
+        <a href="projects.html" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ──────────────────────────────────── -->
+  <section id="about">
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title">A problem-solver at heart</h2>
+        <div class="section-divider"></div>
+
+        <div class="about-photo-wrap">
+          <div class="about-photo-frame">
+            <img
+              src="https://res.cloudinary.com/dyvsijn1k/image/upload/v1782325647/me_court_pwqc0q.jpg"
+              alt="Ubaid Ali"
+              class="about-photo"
+              id="aboutPhoto"
+              onerror="this.style.display='none'; document.getElementById('photoPlaceholder').style.display='flex';"
+            />
+          </div>
+        </div>
+
+        <p>
+          I'm Ubaid Ali, a Computer Engineering student at the University of
+          Engineering &amp; Technology (UET) Lahore. My academic journey spans
+          low-level systems programming all the way to building and maintaining
+          live websites.
+        </p>
+        <p>
+          I'm an active member of the <strong>UET Science Society</strong>,
+          where I serve as the web administrator — responsible for updating and
+          maintaining the society's official website.
+        </p>
+        <p>
+          I enjoy tackling challenges that require both analytical thinking and
+          clean implementation — whether that's designing relational schemas,
+          building data structure libraries, or crafting polished frontends.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Languages &amp; Frameworks</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">6+</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">UET</div>
+            <div class="stat-label">Science Society</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">LHR</div>
+            <div class="stat-label">Pakistan</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-card">
+        <div class="about-card-name">Ubaid Ali</div>
+        <div class="about-card-role">Computer Engineering</div>
+        <div class="about-card-detail">
+          <div class="about-card-detail-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          </div>
+          <span>Lahore, Pakistan</span>
+        </div>
+        <div class="about-card-detail">
+          <div class="about-card-detail-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <span>Computer Engineering, UET Lahore</span>
+        </div>
+        <div class="about-card-detail">
+          <div class="about-card-detail-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v7l-4 8h12l-4-8V3"/></svg>
+          </div>
+          <span>Web Admin, UET Science Society</span>
+        </div>
+        <div class="about-card-detail">
+          <div class="about-card-detail-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <span>C++ · JavaScript · Python · MySQL</span>
+        </div>
+        <div class="about-card-detail">
+          <div class="about-card-detail-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0 1 12 0v2"/></svg>
+          </div>
+          <span>Open to Internships &amp; Opportunities</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EDUCATION ──────────────────────────────── -->
+  <section id="education">
+    <p class="section-label">Education</p>
+    <h2 class="section-title">Academic Background</h2>
+    <div class="section-divider"></div>
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-left">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-line"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-year">2024 – Present</div>
+          <div class="timeline-degree">B.Sc. Computer Engineering</div>
+          <div class="timeline-school">University of Engineering &amp; Technology, Lahore</div>
+          <div class="timeline-detail">Focused on systems programming, database design, and web development. Active member of UET Science Society.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-year">2022 – 2024</div>
+          <div class="timeline-degree">Intermediate — ICS (Computer Science)</div>
+          <div class="timeline-school">Punjab College, Lahore</div>
+          <div class="timeline-detail">Studied Computer Science, Mathematics, and Physics. Built foundation in programming and problem-solving.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-left">
+          <div class="timeline-dot"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-year">2020 – 2022</div>
+          <div class="timeline-degree">Matriculation — Computer Science</div>
+          <div class="timeline-school">Lahore</div>
+          <div class="timeline-detail">Completed matric with Computer Science as a subject, sparking an early interest in software and technology.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ────────────────────────────────── -->
+  <section id="skills">
+    <p class="section-label">Skills</p>
+    <h2 class="section-title">Technical Toolkit</h2>
+    <div class="section-divider"></div>
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Languages</div>
+        <div class="skill-tags">
+          <span>C</span><span>C++</span><span>Python</span>
+          <span>JavaScript</span><span>x86 Assembly</span><span>SQL</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Web</div>
+        <div class="skill-tags">
+          <span>HTML5</span><span>CSS3</span><span>Bootstrap</span>
+          <span>jQuery</span><span>Node.js</span><span>Express</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Databases</div>
+        <div class="skill-tags">
+          <span>MySQL</span><span>MongoDB</span><span>BigQuery</span>
+          <span>ERD Design</span><span>Normalization</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Tools</div>
+        <div class="skill-tags">
+          <span>Git</span><span>GitHub</span><span>VS Code</span>
+          <span>MASM</span><span>Visual Studio</span><span>Linux</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ──────────────────────────────── -->
+  <section id="projects">
+    <p class="section-label">Projects</p>
+    <h2 class="section-title">Selected Work</h2>
+    <div class="section-divider"></div>
+
+    <!-- Cards injected here by js/script.js -->
+    <div class="projects-grid" id="projectsGrid">
+      <div class="projects-loading">Loading projects...</div>
+    </div>
+
+    <div class="projects-cta">
+      <a href="projects.html" class="btn-primary">
+        View All Projects &amp; Videos
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ─────────────────────────────── -->
+  <section id="experience">
+    <p class="section-label">Experience</p>
+    <h2 class="section-title">Work &amp; Activities</h2>
+    <div class="section-divider"></div>
+
+    <div class="exp-item reveal">
+      <div class="exp-left">
+        <div class="exp-period">2022 – Present</div>
+        <div class="exp-company">UET Science Society</div>
+      </div>
+      <div class="exp-right">
+        <div class="exp-role">Web Administrator</div>
+        <div class="exp-desc">
+          Responsible for the official digital presence of the UET Science Society —
+          one of UET Lahore's most active student organizations.
+        </div>
+        <ul class="exp-bullets">
+          <li>Manage and update the society's official website with event announcements, news, and member information</li>
+          <li>Implement front-end changes using HTML, CSS, JavaScript, jQuery, and Bootstrap</li>
+          <li>Ensure content accuracy, cross-browser compatibility, and mobile responsiveness</li>
+          <li>Coordinate with society leadership to reflect latest activities online</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item reveal">
+      <div class="exp-left">
+        <div class="exp-period">2024 – Present</div>
+        <div class="exp-company">UET Lahore</div>
+      </div>
+      <div class="exp-right">
+        <div class="exp-role">Undergraduate Student — Computer Engineering</div>
+        <div class="exp-desc">
+          Engaged in rigorous coursework and self-directed projects spanning
+          systems programming, databases, and web development.
+        </div>
+        <ul class="exp-bullets">
+          <li>Built multiple data structure systems in C++ from scratch (stacks, queues, linked lists, expression parsers)</li>
+          <li>Completed full database design pipelines: ERD → normalization → DDL → query optimization</li>
+          <li>Programmed at the assembly level using MASM x86 and the Irvine32 library</li>
+          <li>Applied probability, statistics, and linear algebra to engineering problem sets</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item reveal">
+      <div class="exp-left">
+        <div class="exp-period">Open to Roles</div>
+        <div class="exp-company">Various</div>
+      </div>
+      <div class="exp-right">
+        <div class="exp-role">Seeking Internship / Part-time</div>
+        <div class="exp-desc">
+          Looking for opportunities in software development, web development,
+          or database engineering to grow and contribute.
+        </div>
+        <ul class="exp-bullets">
+          <li>Interested in backend systems, data engineering, and full-stack web roles</li>
+          <li>Available for part-time or summer internship positions — Lahore or remote</li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ─── CONTACT ─────────────────────────────────── -->
+  <section id="contact">
+    <p class="section-label">Contact</p>
+    <h2 class="section-title">Let's Connect</h2>
+    <div class="section-divider"></div>
+    <p class="contact-subtitle">
+      Currently open to internship opportunities and collaborative projects.
+      Feel free to reach out — I'd love to hear from you.
+    </p>
+    <div class="contact-links">
+      <a href="mailto:ubaidrashid256@gmail.com" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Email
+      </a>
+      <a href="https://www.linkedin.com/in/ubaid-ali-rashid" target="_blank" rel="noopener" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://github.com/ubaid-ali-rashid" target="_blank" rel="noopener" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        GitHub
+      </a>
+      <a href="https://www.facebook.com/share/1LjYbEweE8/" target="_blank" rel="noopener" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        Facebook
+      </a>
+      <a href="https://www.instagram.com/shadow_of_doom_999" target="_blank" rel="noopener" class="contact-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        Instagram
+      </a>
+    </div>
+    <div class="footer-copy">&copy; 2025 Ubaid Ali &mdash; Computer Engineer, UET Lahore</div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
