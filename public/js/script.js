@@ -273,12 +273,12 @@ function renderProjectsPage(projects) {
 
           <div class="proj-details-grid">
             <div class="proj-detail-block">
-              <div class="proj-detail-label">Key Concept</div>
-              <p>${p.keyConcept || '—'}</p>
-            </div>
-            <div class="proj-detail-block">
               <div class="proj-detail-label">What It Does</div>
               <p>${p.whatItDoes || '—'}</p>
+            </div>
+            <div class="proj-detail-block">
+              <div class="proj-detail-label">Key Concept</div>
+              <p>${p.keyConcept || '—'}</p>
             </div>
           </div>
 
